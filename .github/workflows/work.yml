@@ -1,7 +1,8 @@
 name: Update-Index
 on:
  push
-
+    paths:
+    - 'Books/**
 defaults:
   run:
     shell: bash
