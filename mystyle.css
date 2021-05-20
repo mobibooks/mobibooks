@@ -1,0 +1,21 @@
+body {
+   color: #000;
+   background: #fff;
+   border-top-color: #000
+	 margin: auto;
+	 padding: 0 16px;
+   align-items: center;
+	 font-family: sans-serif;
+}
+a {
+   color: #34374c;
+}
+a:hover {
+   color: #272939;
+}
+.highlight .il {
+   color: #cb4b16;
+}
+h2 {
+  text-align: center;
+}

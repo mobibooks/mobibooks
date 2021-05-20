@@ -1,0 +1,44 @@
+import os
+import sys
+from natsort import os_sorted
+
+indexTextStart = """<!DOCTYPE html>
+<html>
+<head><title>Index of KindleBooks</title></head>
+<link rel="stylesheet" href="mystyle.css">
+<body>
+    <h2>KindleBooks</h2>
+    <hr>
+    <ul>
+"""
+indexTextEnd = """
+	</ul>
+</body>
+</html>
+"""
+# take Folder path
+Dir = sys.argv[1]
+def index_folder(folderPath):
+	print("Indexing: " + folderPath)
+	#Getting the content of the folder
+	files = os_sorted(os.listdir(folderPath))
+	#If Root folder, correcting folder name
+	root = folderPath
+	if folderPath == '.':
+		root = 'Root'
+	indexText = indexTextStart.format(folderPath=root)
+	for file in files:
+		#Avoiding index.html files
+		if file != 'index.html':
+			indexText += '\t\t<li>\n\t\t\t<a href="' + Dir + "/" + file + '">' + file + "</a>\n\t\t</li>\n"
+		#Recursive call to continue indexing
+		if os.path.isdir(folderPath+'/'+file):
+			index_folder(folderPath + '/' + file)
+	indexText += indexTextEnd
+	#Create or override previous index.html
+	index = open("."+'/index.html', "w")
+	#Save indexed content to file
+	index.write(indexText)
+
+#Indexing root directory (Script position)
+index_folder(Dir)
