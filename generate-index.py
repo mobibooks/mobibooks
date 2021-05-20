@@ -6,10 +6,11 @@ indexTextStart = """<!DOCTYPE html>
 <html>
 <head><title>Index of KindleBooks</title></head>
 <link rel="stylesheet" href="mystyle.css">
+<script src="search.js"></script>
 <body>
     <h2>KindleBooks</h2>
-    <hr>
-    <ul>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    <ul id="myUL">
 """
 indexTextEnd = """
 	</ul>
