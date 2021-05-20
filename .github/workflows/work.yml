@@ -1,6 +1,8 @@
 name: Update-Index
 on:
- push
+  push:
+    branches:
+      - main
     paths:
       - 'Books/**'
 defaults:
