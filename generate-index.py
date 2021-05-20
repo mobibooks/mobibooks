@@ -9,7 +9,7 @@ indexTextStart = """<!DOCTYPE html>
 <script src="search.js"></script>
 <body>
     <h2>KindleBooks</h2>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for books..">
     <ul id="myUL">
 """
 indexTextEnd = """
