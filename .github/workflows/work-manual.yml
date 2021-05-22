@@ -1,10 +1,6 @@
 name: Update-Index-Manual
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'Books/**'
+  workflow_dispatch:
 defaults:
   run:
     shell: bash
