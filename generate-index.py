@@ -11,6 +11,12 @@ indexTextStart = """<!DOCTYPE html>
     <h2>KindleBooks</h2>
 <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for books..">
     <ul id="myUL">
+		<li>
+			<a href="https://horrible-duck-6.telebit.io/hindu">TheHindu</a>
+		</li>
+		<li>
+			<a href="https://horrible-duck-6.telebit.io/ie">IndianExpress</a>
+		</li>		
 """
 indexTextEnd = """
 	</ul>
