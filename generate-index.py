@@ -5,11 +5,11 @@ from natsort import os_sorted
 indexTextStart = """<!DOCTYPE html>
 <html>
 <head><title>Index of KindleBooks</title></head>
-<link rel="stylesheet" href="mystyle.css">
-<script src="search.js"></script>
+<link rel="stylesheet" href="assets/mystyle.css">
+<script src="assets/search.js"></script>
 <body>
     <h2>KindleBooks</h2>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for books..">
+<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for books..">
     <ul id="myUL">
 """
 indexTextEnd = """

@@ -19,7 +19,7 @@ a:hover {
 h2 {
   text-align: center;
 }
-#myInput {
+#searchInput {
   width: 85%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 20px; /* Add some padding */
